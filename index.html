@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cl.css">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<body>
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+  
+  <div class="topnav">
+    <a class="active" href="#home">Jahnvi</a>
+    <a class="socialhead" href="#home">Instagram</a>
+    <a class="socialhead" href="#home">LinkedIn</a>
+    <a class="socialhead" href="#home">Facebook</a>
+    <span id="fullbutton" onclick="openNav()"><img src="./icons/3line.svg"></span>
+  </div>
+  <!-- Function for navbar overlay -->
+  <script>
+  function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+  }
+  
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+  }
+  </script>
+  <!-- ----------LANDING PAGE---------- -->
+  <div class="main">
+    <div class="container" id="cont1">
+      <div class="row">
+        <div class="col-lg-6" id="textbox1">
+          <p id="name1">Jahnvi lastname</p>
+          <p id="artist">Hey!! I'm an Artist</p>
+          <button class="button">Say Hello <img id="hello" src="./images/hello.png"></button>
+        </div>
+        <div class="col-lg-6" id="myimage1">
+          <img src="./images/videl1.png" id="mainph">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

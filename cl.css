@@ -1,0 +1,252 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+/* -------------------NAVBAR-------------------- */
+.topnav {
+  overflow: hidden;
+  background-color: #FEE4CF;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: white solid;
+  padding-bottom: 10px;
+  border-width: 1px;
+  display: block;
+
+}
+
+.topnav .active {
+  float: left;
+  color: #f2f2f2;
+  margin-left: 10%;
+  margin-top: 2%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: 'Sofia';
+}
+.socialhead
+{
+  float: left;
+  font-family: 'Montserrat';
+  margin-left: 3%;
+  margin-top: 2.5%;
+  font-weight: 500;
+  font-size: 20px;
+  color: #A16F6B;
+  text-decoration: none;
+}
+.topnav a.active {
+  color: #F77C79;
+}
+
+
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+#fullbutton
+{
+  /* font-size:30px; */
+  cursor:pointer;
+  float:right;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10%;
+  margin-top: 2%;
+  margin-right:10%;
+}
+/* -------------------NAVBAR ENDS-------------------- */
+
+/* ----------------MAIN PAGE--------------- */
+.main
+{
+  background-color: #FEE4CF;
+  min-height: 100vh;
+  /* position: relative; */
+  margin-top: 60px;
+  display: block;
+  padding: 50px;
+}
+#cont1
+{
+  padding-top: 100px;
+}
+#textbox1
+{
+  margin-top: 60px;
+  padding-left: 7%;
+}
+#name1
+{
+  color: #F77C79;
+  font-size: 30px;
+  font-family: 'Sofia';
+}
+#artist
+{
+  color: #6D3035;
+  font-size: 80px;
+  font-weight: 1000;
+  font-family: 'Montserrat';
+  line-height: normal;
+}
+.button {
+  background-color: #222222;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 20px 0px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+#mainph
+{
+  width: 400px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#hello
+{
+  width: 40px;
+  height: auto;
+}
+@media screen and (max-width:800px)
+{
+  #textbox1
+  {
+    margin-top: 0px;
+    margin-left: 0%;
+  }
+  .main
+  {
+    margin-top: 0px;
+  }
+  .socialhead
+  {
+    display: none;
+  }
+}
+  @media screen and (max-width:600px)
+{
+  #textbox1
+  {
+    margin-top: 0px;
+    margin-left: 0%;
+    text-align: center;
+  }
+  .main
+  {
+    margin-top: 0px;
+  }
+  #artist
+  {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width:500px)
+{
+  #textbox1
+  {
+    margin-top: 0px;
+    margin-left: 0%;
+    text-align: center;
+  }
+  .main
+  {
+    margin-top: 0px;
+  }
+  #artist
+  {
+    font-size: 60px;
+  }
+  #mainph
+  {
+    width: 300px;
+    height: auto;
+  }
+  .button {
+    margin: 10px 0px;
+  }
+}
+@media screen and (max-width:400px)
+{
+  #textbox1
+  {
+    margin-top: 0px;
+    margin-left: 0%;
+    text-align: center;
+  }
+  .main
+  {
+    margin-top: 0px;
+  }
+  #artist
+  {
+    font-size: 40px;
+  }
+  #mainph
+  {
+    width: 250px;
+    height: auto;
+  }
+  .button {
+    font-size: 20px;
+    margin: 10px 0px;
+  }
+}
+/* ----------------MAIN PAGE ENDS--------------- */
