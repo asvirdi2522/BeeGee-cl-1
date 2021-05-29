@@ -3,6 +3,9 @@ body
     margin: 0;
     padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 /* -------------------NAVBAR-------------------- */
 .topnav {
   overflow: hidden;
@@ -37,6 +40,10 @@ body
   font-size: 20px;
   color: #A16F6B;
   text-decoration: none;
+}
+.socialhead:hover
+{
+  color: #6D3035;
 }
 .topnav a.active {
   color: #F77C79;
@@ -95,6 +102,9 @@ body
 }
 #fullbutton
 {
+  border-color: #f2f2f2;
+  border-style: solid;
+  border-width: 0.01px;
   /* font-size:30px; */
   cursor:pointer;
   float:right;
@@ -165,6 +175,20 @@ body
   width: 40px;
   height: auto;
 }
+@media screen and (max-width: 1040px)
+{
+  .main
+  {
+    min-height: 50vh;
+  }
+}
+@media screen and (max-width: 1000px)
+{
+  .main
+  {
+    min-height: 100vh;
+  }
+}
 @media screen and (max-width:800px)
 {
   #textbox1
@@ -212,7 +236,7 @@ body
   }
   #artist
   {
-    font-size: 60px;
+    font-size: 50px;
   }
   #mainph
   {
@@ -250,3 +274,137 @@ body
   }
 }
 /* ----------------MAIN PAGE ENDS--------------- */
+/* --------------------ABOUT ME------------ */
+#textbox2
+{
+  background-color: white;
+  border: #f1f1f1 solid;
+  border-width: 0.5px;
+  border-bottom-width: 8px;
+  transition: .3s;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  /* border: lightgray solid;
+  border-top-width: 0.1px;
+  border-right-width: 0.1px;
+  border-left-width: 0.1px; */
+}
+#cont2
+{
+  padding-top: 100px;
+  padding-bottom: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+#textbox2:hover
+{
+  border-bottom-width: 8px;
+  transform: scale(1.03);
+  border-bottom: #F66E6E solid;
+}
+#helloevery
+{
+  font-weight: 600;
+  font-size: 25px;
+  color: black;
+}
+#hellotxt
+{
+  font-size: 20px;
+  color: black;
+}
+#aboutimg
+{
+  width: 250px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  filter: gray; /* IE5+ */
+      -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+      -webkit-transition: all .4s ease-in-out; 
+}
+#aboutimg:hover {
+  filter: none;
+    -webkit-filter: grayscale(0);
+    -webkit-transform: scale(1.01);
+  }
+@media screen and (max-width: 800px)
+{
+  #imgbox
+  {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 500px)
+{
+  #cont2
+  {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  }
+}
+@media screen and (max-width: 400px)
+{
+  #helloevery
+  {
+    font-size: 20px;
+  }
+  #hellotxt
+  {
+    font-size: 17px;
+  }
+}
+/* --------------------ABOUT ME ENDS------------ */
+
+
+/* ------------------FLOAT ON SCROLL ANIMATION---------------- */
+.slideanim {
+  visibility:hidden;
+  visibility:visible\9;/*For old IE browsers IE6-8 */
+}
+.slideanim.slide {                  
+  visibility: visible;                  
+  animation: slide 0.5s;
+}
+.slideanim::after {
+  /* useful when its child elements are float:left; */
+  content: "";
+  display: table;
+  clear: both;
+}
+@keyframes slide {
+  0% {
+      opacity: 0;
+      transform: translateY(50%);
+  } 
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  } 
+}
+/* ------------------FLOAT ON SCROLL ANIMATION ENDS---------------- */
+/* ----------------------CUSTOM SCROLL BAR---------------- */
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #F66E6E;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #6D3035;
+}
+/* ----------------------CUSTOM SCROLL BAR ENDS---------------- */

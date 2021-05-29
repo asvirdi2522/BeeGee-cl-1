@@ -4,26 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Jahnvi Portfolio</title>
     <link rel="stylesheet" href="cl.css">
     <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- ANIMATION ON SCROLL JS -->
+    <script src="float-panel.js"></script>
 </head>
 <body>
   <div id="myNav" class="overlay">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <div class="overlay-content">
-      <a href="#">About</a>
+      <a href="#cont2">About</a>
       <a href="#">Services</a>
       <a href="#">Clients</a>
       <a href="#">Contact</a>
     </div>
   </div>
   
-  <div class="topnav">
-    <a class="active" href="#home">Jahnvi</a>
+  <div class="topnav" id="navbarpre">
+    <a class="active" href="index.html">Jahnvi</a>
     <a class="socialhead" href="#home">Instagram</a>
     <a class="socialhead" href="#home">LinkedIn</a>
     <a class="socialhead" href="#home">Facebook</a>
@@ -39,6 +41,21 @@
     document.getElementById("myNav").style.width = "0%";
   }
   </script>
+  <!-- function to change the background color of navbar on scroll -->
+  <script>
+    // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        document.getElementById("navbarpre").style.backgroundColor = "white";
+        document.getElementById("navbarpre").style.transition = ".3s";
+      } else {
+        document.getElementById("navbarpre").style.backgroundColor = "#FEE4CF";
+        document.getElementById("navbarpre").style.transition = ".3s";
+      }
+    }
+    </script>
   <!-- ----------LANDING PAGE---------- -->
   <div class="main">
     <div class="container" id="cont1">
@@ -54,5 +71,21 @@
       </div>
     </div>
   </div>
+  <!-- ---------------ABOUT ME-------------- -->
+  <div class="aboutme" style="background-color: #FFF6EE;">
+    <div class="container" id="cont2">
+      <div class="row" id="row2">
+        <!-- slideanim class is added for float scroll animation -->
+        <div class="col-lg-6 slideanim" id="textbox2">
+          <p id="helloevery">Hello everybody! <img id="hello" src="./images/hello.png"></p>
+          <p id="hellotxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur rerum vero aut expedita quibusdam optio. Dolor sunt alias commodi. Facere deleniti excepturi accusamus obcaecati dolore doloremque accusantium quidem perspiciatis quam!</p>
+        </div>
+        <div class="col-lg-6" id="imgbox">
+          <img id="aboutimg" src="./images/videl1.png">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ---------------ABOUT ME ENDS-------------- -->
 </body>
 </html>
