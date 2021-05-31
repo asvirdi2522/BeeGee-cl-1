@@ -17,7 +17,7 @@ html {
   padding-bottom: 10px;
   border-width: 1px;
   display: block;
-
+  z-index: 1;
 }
 
 .topnav .active {
@@ -55,7 +55,7 @@ html {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   left: 0;
   background-color: rgb(0,0,0);
@@ -124,15 +124,15 @@ html {
   /* position: relative; */
   margin-top: 60px;
   display: block;
-  padding: 50px;
+  padding: 40px;
 }
 #cont1
 {
-  padding-top: 100px;
+  padding-top: 40px;
 }
 #textbox1
 {
-  margin-top: 60px;
+  margin-top: 100px;
   padding-left: 7%;
 }
 #name1
@@ -164,7 +164,7 @@ html {
 }
 #mainph
 {
-  width: 400px;
+  width: 550px;
   height: auto;
   display: block;
   margin-left: auto;
@@ -180,6 +180,10 @@ html {
   .main
   {
     min-height: 50vh;
+  }
+  #mainph
+  {
+    width: 400px;
   }
 }
 @media screen and (max-width: 1000px)
@@ -216,10 +220,19 @@ html {
   .main
   {
     margin-top: 0px;
+    padding: 50px;
+  }
+  #mainph
+  {
+    width: 400px;
   }
   #artist
   {
     font-size: 50px;
+  }
+  #cont1
+  {
+    padding-top: 100px;
   }
 }
 @media screen and (max-width:500px)
@@ -300,7 +313,7 @@ html {
 #textbox2:hover
 {
   border-bottom-width: 8px;
-  transform: scale(1.03);
+  transform: scale(1.01);
   border-bottom: #F66E6E solid;
 }
 #helloevery
@@ -359,7 +372,113 @@ html {
   }
 }
 /* --------------------ABOUT ME ENDS------------ */
+/* ---------------MY RECENT WORK----------------- */
+#recwork
+{
+  font-size: 45px;
+  padding-top: 35px;
+  padding-bottom: 25px;
+  margin-left: 10%;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  color: white;
+}
+.recent
+{
+  /* background-attachment: fixed; */
+  background:url(./Artworks/b2.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:100%;
+  /* background-size:cover; */
+  /* overlay effect */
+  box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.7);
+}
+/* #row3
+{
+  margin-top: 10px;
+} */
+#card1
+{
+  overflow: hidden;
+}
+.ph1
+{
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 35px;
+  margin-top: 15px;
+}
+#cont3
+{
+  padding-top: 40px;
+}
 
+@media screen and (max-width:1030px)
+{
+  .ph1
+  {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width:800px)
+{
+  .ph1
+  {
+    width: 220px;
+  }
+  #recwork
+  {
+    margin-left: 7%;
+    font-size: 38px;
+    padding-bottom: 0px;
+  }
+}
+@media screen and (max-width:600px)
+{
+  .ph1
+  {
+    width: 370px;
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    margin-top: 10px;
+  }
+  #recwork
+  {
+    margin-left: 0%;
+    font-size: 33px;
+    text-align: center;
+    padding-bottom: 0px;
+  }
+}
+@media screen and (max-width:400px)
+{
+  .ph1
+  {
+    width: 320px;
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    margin-top: 0px;
+  }
+  #recwork
+  {
+    margin-left: 0%;
+    font-size: 28px;
+    text-align: center;
+    padding-bottom: 0px;
+  }
+}
+/* ---------------MY RECENT WORK ENDS----------------- */
 
 /* ------------------FLOAT ON SCROLL ANIMATION---------------- */
 .slideanim {
