@@ -420,7 +420,7 @@ html {
 }
 #cont3
 {
-  padding-top: 40px;
+  padding-top: 1px;
 }
 
 @media screen and (max-width:1030px)
@@ -755,7 +755,7 @@ html {
 {
   .footer
   {
-    min-height: 30vh;
+    min-height: 32vh;
   }
   .power
   {
