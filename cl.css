@@ -593,6 +593,10 @@ html {
     margin-right: auto;
     margin-bottom: 20px;
   }
+  #feedyears
+  {
+    font-size: 30px;
+  }
 }
 @media screen and (max-width: 400px)
 {
@@ -613,7 +617,7 @@ html {
   }
   #feedyears
   {
-    margin-left: 3%;
+    margin-left: 10%;
   }
 }
 /* -------------------FEEDBACK ENDS---------------- */
