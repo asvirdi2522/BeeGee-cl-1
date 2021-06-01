@@ -297,13 +297,15 @@ html {
 #textbox2
 {
   background-color: white;
-  border: #f1f1f1 solid;
-  border-width: 0.5px;
+  border-bottom: #f1f1f1 solid;
+  /* border-width: 0.5px; */
   border-bottom-width: 8px;
   transition: .3s;
   padding-top: 10px;
   padding-right: 20px;
   padding-left: 20px;
+  border-radius: 5px;
+  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
   /* border: lightgray solid;
   border-top-width: 0.1px;
   border-right-width: 0.1px;
@@ -318,9 +320,9 @@ html {
 }
 #textbox2:hover
 {
-  border-bottom-width: 8px;
-  transform: scale(1.01);
   border-bottom: #F66E6E solid;
+  border-bottom-width: 8px;
+  transform: scale(1.02);
 }
 #helloevery
 {
@@ -417,6 +419,11 @@ html {
   border-radius: 10px;
   margin-bottom: 35px;
   margin-top: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.ph1:hover
+{
+  box-shadow: 0 4px 16px 0 rgba(0,0,0,0.2);
 }
 #cont3
 {
@@ -485,6 +492,131 @@ html {
   }
 }
 /* ---------------MY RECENT WORK ENDS----------------- */
+/* -------------------FEEDBACK---------------- */
+.feedback
+{
+  background-color: #FFF6EE;
+  min-height: 66vh;
+}
+#feedtxt
+{
+  padding-top: 50px;
+  padding-bottom: 15px;
+  font-size: 75px;
+  font-size: 'Montserrat';
+  font-weight: 700;
+  color: #F66E6E;
+  line-height: 45px;
+  margin-left: 8%;
+}
+#cont7
+{
+  padding-top: 50px;
+}
+#feedyears
+{
+  margin-left: 5%;
+  font-size: 40px;
+  color: #6D3035;
+  font-weight: 200;
+}
+.card7
+{
+  border-radius: 10px;
+  max-width: 400px;
+  background-color: white;
+  border-bottom: lightgray solid;
+  border-bottom-width: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: .5s;
+}
+.card7:hover
+{
+  transition: .5s;
+  border-bottom-color: #F77C79;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+#backtxt
+{
+  padding: 15px;
+}
+#backname
+{
+  padding-top: 15px;
+  text-align: center;
+  line-height: 10px;
+}
+#backpost
+{
+  line-height: 8px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+@media screen and (max-width: 1030px)
+{
+  .feedback
+  {
+    min-height: 40vh;
+  }
+}
+@media screen and (max-width: 800px)
+{
+  .feedback
+  {
+    min-height: 58vh;
+  }
+}
+@media screen and (max-width: 600px)
+{
+  .feedback
+  {
+    min-height: 130vh;
+  }
+  .card7
+  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 500px)
+{
+  .feedback
+  {
+    min-height: 123vh;
+  }
+  .card7
+  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 400px)
+{
+  .feedback
+  {
+    min-height: 123vh;
+  }
+  .card7
+  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+  #feedtxt
+  {
+    margin-left: 4%;
+  }
+  #feedyears
+  {
+    margin-left: 3%;
+  }
+}
+/* -------------------FEEDBACK ENDS---------------- */
 /* ------------------FOOTER------------------ */
 .footer
 {
