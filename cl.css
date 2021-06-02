@@ -520,7 +520,6 @@ box-shadow:  20px 20px 0px #622c2c,
 #feedtxt
 {
   padding-top: 50px;
-  padding-bottom: 15px;
   font-size: 75px;
   font-size: 'Montserrat';
   font-weight: 700;
@@ -617,6 +616,11 @@ box-shadow:  20px 20px 0px #622c2c,
   {
     font-size: 30px;
   }
+  #cont7
+{
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
 }
 @media screen and (max-width: 400px)
 {
@@ -987,11 +991,18 @@ box-shadow:  20px 20px 0px #622c2c,
 }
 @media screen and (max-width: 450px)
 {
-  .footheading
+  #footheading
   {
     font-size: 40px;
   }
 }
+/* @media screen and (max-width: 400px)
+{
+  #footheading
+  {
+    font-size: 30px;
+  }
+} */
 /* ---------------------FOOTER ENDS--------------- */
 /* ------------------FLOAT ON SCROLL ANIMATION---------------- */
 .slideanim {
