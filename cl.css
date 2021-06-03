@@ -563,14 +563,14 @@ box-shadow:  20px 20px 0px #622c2c,
 {
   padding-bottom: 4px;
   text-align: center;
-  /* line-height: 10px; */
+  line-height: 0px;
 }
-/* #backpost
+#backpost
 {
-  line-height: 8px;
-  padding-bottom: 15px;
+  line-height: 5px;
+  padding-bottom: 9px;
   text-align: center;
-} */
+}
 /* @media screen and (max-width: 1030px)
 {
   .feedback
@@ -915,20 +915,18 @@ box-shadow:  20px 20px 0px #622c2c,
     min-height: 35vh;
   }
 } */
-.footer
+
+
+/* FOOTER2 */
+/* .footer
 {
   margin: 0%;
-  /* background-color: black; */
-  /* background-attachment: fixed; */
   background:url(./Artworks/foot.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* height:100%; */
-  /* background-size:cover; */
-  /* overlay effect */
-  box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.7);
+  box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.8);
 }
 #footheading
 {
@@ -995,14 +993,182 @@ box-shadow:  20px 20px 0px #622c2c,
   {
     font-size: 40px;
   }
-}
-/* @media screen and (max-width: 400px)
-{
-  #footheading
-  {
-    font-size: 30px;
-  }
 } */
+.footer
+{
+  /* background-color: #ffb0b0; */
+  margin: 0%;
+  background:url(./Artworks/foot.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.8);
+}
+#contact
+{
+  font-size: 45px;
+  padding-top: 35px;
+  padding-bottom: 25px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+.activefoot
+{
+  float: left;
+  color: #F66E6E;
+  margin-left: 10%;
+  margin-top: 10%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: 'Sofia';
+}
+.activefoot:hover
+{
+  color: #6D3035;
+  transition: .2s ease;
+}
+#socialc
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 2.5%;
+}
+.socialfoot
+{
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-weight: 100;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+.socialfoot:hover
+{
+  transition: .1s ease;
+  color: #F77C79;
+  font-weight: 600;
+}
+#row4
+{
+  border-bottom: solid white;
+  border-width: 1px;
+}
+.linktxt3
+{
+  color: white;
+  text-decoration: underline;
+}
+.linktxt3:hover
+{
+  color: gray;
+  transition: .2s;
+  text-decoration: underline;
+}
+.linktxt3:active
+{
+  color: white;
+  text-decoration: underline;
+}
+.stick
+{
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+  color: white;
+}
+.button1 {
+  background-color: #F66E6E;
+  border: none;
+  color: white;
+  display: block;
+  padding: 5px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 50px;
+  /* margin-left: 20px; */
+}
+.button1:hover
+{
+  background-color: #6D3035;
+  transition: .2s ease;
+}
+.linktxt
+{
+  color: white;
+  text-decoration: none;
+}
+.linktxt:hover
+{
+  color: #f2f2f2;
+  text-decoration: none;
+}
+.linktxt:active
+{
+  color: white;
+  text-decoration: none;
+}
+@media screen and (max-width:800px)
+{
+  .socialfoot
+  {
+    padding-left: 5px;
+    padding-right: 5px;
+  } 
+}
+@media screen and (max-width: 600px)
+{
+  .activefoot
+  {
+    width: 100%;
+    text-align: center;
+    margin-left: 0%;
+    margin-top: 3%;
+  }
+  #contact
+  {
+  font-size: 45px;
+  padding-top: 25px;
+  padding-bottom: 15px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  margin: 0;
+  }
+  .socialfoot
+  {
+    padding-left: 10px;
+    padding-right: 10px;
+  } 
+  .stick
+  {
+    background-color: black;
+  }
+  #row4
+  {
+    padding-bottom: 15px;
+  }
+}
+@media screen and (max-width: 450px)
+{
+  .socialfoot
+  {
+    display: block;
+  }
+}
 /* ---------------------FOOTER ENDS--------------- */
 /* ------------------FLOAT ON SCROLL ANIMATION---------------- */
 .slideanim {
