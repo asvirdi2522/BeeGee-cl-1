@@ -448,7 +448,15 @@ box-shadow:  20px 20px 0px #622c2c,
 {
   padding-top: 1px;
 }
-
+@media screen and (max-width: 1300px)
+{
+  .ph1
+  {
+    width: 360px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+  }
+}
 @media screen and (max-width:1030px)
 {
   .ph1
